@@ -1,0 +1,12 @@
+.images-div{
+	float: left;
+	margin-left: 4px; 
+}
+
+#box-images{
+	width: 90%;
+}
+
+.images-img{
+	height: 200px;
+}
