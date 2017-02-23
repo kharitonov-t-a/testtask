@@ -1,4 +1,7 @@
 $(function () {
+    //for different brousers
+    sessionDie();
+
     var $body = $(document.body);
 
     var files;
@@ -64,7 +67,7 @@ resizeImages = function (){
 }
 
 
-window.onbeforeunload = function() {
+sessionDie= function (){
     $.ajax({
         type: 'POST',
         url: './php/sessdie.php',
@@ -72,6 +75,10 @@ window.onbeforeunload = function() {
         },
         error: function(xhr, status, error) {
         }
-
     });
+};
+
+//for different brousers
+window.onbeforeunload = function() {
+    sessionDie();
 };
