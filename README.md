@@ -1,2 +1,2 @@
-# testtask
-На сколько помню делает watermark на картинках.
+# Watermark
+Adds a watermark to the picture.
